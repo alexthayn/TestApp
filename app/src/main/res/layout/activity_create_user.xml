@@ -29,7 +29,7 @@
         android:id="@+id/createUserButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layot_alignParentEnd="True"
+        android:layout_alignParentEnd="True"
         android:layout_margin="16dp"
         android:layout_below="@+id/username"
         android:text="Create"
