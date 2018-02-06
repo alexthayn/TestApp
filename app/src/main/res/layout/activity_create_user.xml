@@ -25,13 +25,39 @@
         android:text=""
         android:textSize="36sp" />
 
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/female"
+            android:text="Female"
+            android:layout_margin="10dp"/>
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/male"
+            android:checked="true"
+            android:text="Male"
+            android:layout_margin="10dp"/>
+    </RadioGroup>
+
     <Button
         android:id="@+id/createUserButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="True"
         android:layout_margin="16dp"
-        android:layout_below="@+id/username"
+        android:layout_below="@+id/gender"
         android:text="Create"
         android:onClick="onClick"/>
 </RelativeLayout>
